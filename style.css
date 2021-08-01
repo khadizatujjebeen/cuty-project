@@ -1,0 +1,44 @@
+.cuty{
+	height:500px;
+	width:500px;
+	margin:50px auto;
+	background-image:url('images/cuty.jpg');
+	background-size:cover;
+	background-position:center center;
+	position:relative;
+}
+
+.cuty:before{
+	content:'';
+	display:table;
+	clear:both;
+	height:500px;
+	width:250px; 
+	background:blue;
+	position:absolute;
+	left:0;
+	top:0;
+	transition:3s;
+}
+.cuty:after{
+	content:'';
+	display:table;
+	clear:both;
+	height:500px;
+	width:250px;
+	background:blue;
+	position:absolute;
+	right:0;
+	top:0;
+	transition:3s;
+}
+.cuty:hover:after{
+	right:-250px;
+	transform:rotateY(180deg);
+	background:#e84393;
+}
+.cuty:hover:before{
+	left:-250px;
+	transform:rotateY(180deg);
+	background:#e84393;
+}
